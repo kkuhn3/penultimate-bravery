@@ -2,6 +2,7 @@ html {
 	background: #01121B;
 	color: #CDBA8C;
 	min-width: 678px;
+	user-select: none;
 }
 
 img {
