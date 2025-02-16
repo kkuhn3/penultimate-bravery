@@ -1,0 +1,97 @@
+html {
+	background: #01121B;
+	color: #CDBA8C;
+	min-width: 678px;
+}
+
+img {
+	margin-bottom: .5vh;
+}
+
+.item {
+	display: inline-block;
+	width: 7vh;
+	text-align: center;
+	padding: 1vh;
+	img {
+		height: 6vh;
+		object-fit: contain;
+		border: 2px solid #535353;
+		box-shadow: 0 1px 0 0 #000, 2px 0 0 0 #000, -2px 0 0 0 #000, 0 -2px 0 0 #000;
+	}
+}
+.item:hover {
+	background-color: #0D3B44;
+	img {
+		border: 2px solid #585858;
+	}
+}
+
+.champion {
+	display: inline-block;
+	width: 12vh;
+	text-align: center;
+}
+
+.info {
+	position: absolute;
+	background-color: #222;
+	padding: 8px;
+	min-height: 55px;
+	min-width: 100px;
+	height: max-content;
+	width: max-content;
+	hr {
+		margin: revert;
+	}
+	span {
+		font-size: smaller;
+	}
+	box-shadow: 0 2px 0 0 #CDBA8C inset, 2px 0 0 0 #CDBA8C inset, -2px 0 0 0 #CDBA8C inset, 0 -2px 0 0 #CDBA8C inset;
+}
+
+#left {
+	width: 8vh;
+	float: left;
+	margin-right: 8px;
+	img {
+		height: 4.4vh;
+		cursor: pointer;
+	}
+	hr {
+		margin: revert;
+	}
+}
+
+#classfilter {
+	margin-left: 8px;
+	display: inline-block;
+	img {
+		height: 7vh;
+		margin-top: 4vh;
+		cursor: pointer;
+	}
+	height: 13vh;
+}
+
+#championsContainer {
+	display: inline-block;
+	img {
+		height: 12vh;
+		object-fit: contain;
+	}
+	float: right;
+	font-size: 1.5vh;
+}
+
+#runitback {
+	width: 13vw;
+	float: right;
+	margin-top: 4vh;
+	cursor: pointer;
+}
+
+hr{ 
+   margin-top: 0px;
+   margin-bottom: 0px;
+} 

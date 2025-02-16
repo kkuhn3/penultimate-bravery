@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<title>Penultimate Bravery</title>
+	</head>
+	<body>
+		<div id="top">
+			<div id="classfilter">
+				<img id='all' src='./images/all_1.png'/>
+				<img id='fighter' src='./images/fighter_0.png'/>
+				<img id='marksman' src='./images/marksman_0.png'/>
+				<img id='assassin' src='./images/assassin_0.png'/>
+				<img id='mage' src='./images/mage_0.png'/>
+				<img id='tank' src='./images/tank_0.png'/>
+				<img id='support' src='./images/support_0.png'/>
+			</div>
+			<div class="container" id="championsContainer">
+			</div>
+			<img id="runitback" src="./images/reroll_0.png" onmouseover="this.src='./images/reroll_1.png'" onmouseout="this.src='./images/reroll_0.png'" onclick="randomBoth()">
+		</div>
+		<div id="left">
+			<img id='custom_clear' src='./images/clear.png'/>
+			<img id='Damage' src='./images/ad_0.png'/>
+			<img id='CriticalStrike' src='./images/crit_0.png'/>
+			<img id='AttackSpeed' src='./images/attackspeed_0.png'/>
+			<img id='OnHit' src='./images/onhit_0.png'/>
+			<img id='ArmorPenetration' src='./images/armorpen_0.png'/>
+			<hr>
+			<img id='SpellDamage' src='./images/ap_0.png'/>
+			<img id='Mana' src='./images/mana_0.png'/>
+			<img id='MagicPenetration' src='./images/magicpen_0.png'/>
+			<hr>
+			<img id='Health' src='./images/health_0.png'/>
+			<img id='Armor' src='./images/defense_0.png'/>
+			<img id='SpellBlock' src='./images/mr_0.png'/>
+			<hr>
+			<img id='AbilityHaste' src='./images/abilityhaste_0.png'/>
+			<img id='custom_movement' src='./images/movement_0.png'/>
+			<img id='LifeSteal' src='./images/lifesteal_0.png'/>
+		</div>
+		<div id="right">
+			<div id="starter">
+				STARTER + BOOTS
+				<hr>
+				<div class="container" id="starterContainer">
+				</div>
+			</div>
+			<div id="basic">
+				BASIC
+				<hr>
+				<div class="container" id="commonContainer">
+				</div>
+			</div>
+			<div id="epic">
+				EPIC
+				<hr>
+				<div class="container" id="epicContainer">
+				</div>
+			</div>
+			<div id="legendary">
+				LEGENDARY
+				<hr>
+				<div class="container" id="legendaryContainer">
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="index.js"></script>
+	<script>
+		(async() => {
+			await loadContent();
+			addimgmouses();
+			randomBoth();
+		})();
+	</script>
+</html>
